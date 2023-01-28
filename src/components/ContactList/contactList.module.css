@@ -1,0 +1,17 @@
+.list {
+  width: 350px;
+  padding: 20px;
+}
+
+.contact_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  cursor: pointer;
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+}

@@ -1,0 +1,16 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 350px;
+  padding: 20px;
+  border: 2px solid;
+  background-color: rgb(240, 236, 236);
+}
+
+.btn_form {
+  width: 100px;
+  border-radius: 5px;
+  background-color: rgb(72, 129, 72);
+  cursor: pointer;
+}
