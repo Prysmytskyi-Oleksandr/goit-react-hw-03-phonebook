@@ -17,8 +17,10 @@ export class App extends Component {
     }
   }
 
-  componentDidUpdate() {
-    localStorage.setItem('my contacts', JSON.stringify(this.state.contacts));
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.contacts.length !== this.state.contacts.length) {
+      localStorage.setItem('my contacts', JSON.stringify(this.state.contacts));
+    }
   }
 
   addContact = ({ name, number }) => {
